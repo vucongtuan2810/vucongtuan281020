@@ -186,9 +186,12 @@ html{
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 #content .content-section .content-heading{
     font-size: 30px;
