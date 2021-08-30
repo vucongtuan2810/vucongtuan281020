@@ -20,7 +20,7 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="">
+                <li><a href="#">
                     More
                     <i class="nav-arrow-down ti-angle-down"></i>
                 </a>
@@ -35,6 +35,9 @@
             <!--Begin: search button-->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class=" menu-icon ti-menu"></i>
             </div>
             <!--End: search button-->
         </div>
@@ -165,12 +168,13 @@
                             </form>
                         </div>
                     </div>
+                    
                
             </div>
-            <!-- End: contact section-->
             
+             
         </div>
-
+           <!-- End: contact section-->
 
         <div id="footer">
             <div class="map-section">
@@ -251,6 +255,31 @@
         modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
+    </script>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // Đóng/mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else{
+                header.style.height = null;
+            }
+        }
+
+        // Tự động đóng khi chọn menu
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+            for (var i=0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+
+                menuItem.onclick = function() {
+                    header.style.height = null;
+                }
+            }
     </script>
 </body>
 </html>

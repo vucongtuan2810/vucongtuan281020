@@ -75,6 +75,7 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav{
@@ -136,18 +137,31 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
+    padding: 0 21px;
 }
+
+#header .mobile-menu-btn:hover{
+   background-color: #ccc ;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+   color: #000;
+}
+
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    padding: 0 21px;
+    
     
 }
 #slider{
@@ -190,14 +204,14 @@ html{
     padding: 64px 0;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 0 16px;
 }
 #content .content-section .content-heading{
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     letter-spacing: 4px;
+    padding-top: 16px;
 }
 
 #content .content-section .content-sub-heading{
