@@ -26,11 +26,9 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-    #nav > li {
-        display: block;
-    }
-    #nav > li:first-child{
-        display: inline-block;
+
+    #header{
+        overflow: hidden;
     }
     #header .mobile-menu-btn{
         position: absolute;
@@ -41,5 +39,23 @@
     #header .search-btn{
         display: none;
     }
+    #nav > li {
+        display: block;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    
     
 }
