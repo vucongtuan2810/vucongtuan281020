@@ -28,6 +28,9 @@ html{
     cursor: pointer;
     
 }
+.mt-32{
+    margin-top: 32px !important;
+}
 .contact-form .btn{
     background-color: #000;
     color: #fff;
@@ -277,7 +280,7 @@ html{
 
 }
 .places-list{
-    margin-top: 32px ;
+    margin-top: 16px ;
     overflow: hidden;
     padding-bottom: 48px;
 
